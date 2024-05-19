@@ -1,2 +1,3 @@
 # bd_api
-这是一个本地的api，通过node.js实现
+一个学艺不精的人写的本地的api
+通过node.js实现
