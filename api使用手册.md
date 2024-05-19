@@ -22,8 +22,20 @@
    本 API 接口是由学艺不精的人创作的，没有什么api设计风格
    主要 HTTP 方法包含：POST、GET、DELETE。
    方法请求数据类型为 application/json
+### 1本地部署：
 
-### 1 通用接口
+​		1.要安装node.js
+
+​		2.使用编程软件( 以Visual Studio Code例) 导入项目
+
+​		3.点开index.js , 按F5运行项目，会弹出选用调试器，选择node.js
+
+​		4.会报错,因此要在下方的终端进行初始化项目(对准路径)
+
+```
+PS C:\Users\amg\Desktop\12\本地api>   yarn init 
+```
+### 2 通用接口
 
 #### 1.1.用户登录
 
