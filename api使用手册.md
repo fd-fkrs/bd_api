@@ -403,3 +403,39 @@ application/json
 }
 ```
 
+
+#### 1.7 轮播图图片获取
+
+**get**   /lbt
+
+接口描述
+
+请求数据类型
+application/json
+
+响应参数
+
+| 参数名称 | 参数说               | 类型   |
+| :------- | -------------------- | ------ |
+| code     | 状态码，200 正确     | string |
+| msg      | 返回消息内容         | string |
+| data     | 列表数据（数组类型） | string |
+|          |                      |        |
+| id       | ID                   | string |
+| url      | 图片链接             | string |
+
+响应示例
+
+```
+{
+    "code": "200",
+    "msg": "轮播图",
+    "data": [
+        {
+            "id": "1",
+            "url": "https://cdn9-banquan.ituchong.com/weili/image/l/1590717434003324928.jpeg"
+        }
+    ]
+}
+```
+
