@@ -423,6 +423,7 @@ application/json
 |          |                      |        |
 | id       | ID                   | string |
 | url      | 图片链接             | string |
+| title    | 标题             | string |
 
 响应示例
 
