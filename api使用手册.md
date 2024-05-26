@@ -211,7 +211,10 @@ application/json
 
 
 
-#### 1.3 IT行业相关新闻资讯获取
+
+#### 1.3 IT行业相关新闻资讯
+
+##### 1.3.1 IT行业相关新闻资讯获取
 
 接口地址
 **get**/xingw
@@ -253,6 +256,55 @@ application/json
             "url": "https://www.163.com/tech/article/J25CBQ2L00097U7T.html"
         }
     ]
+}
+```
+
+##### 1.32 查询IT行业相关新闻资讯
+
+**get**/xingw/{id}
+
+接口描述
+
+请求数据类型
+application/json
+
+请求参数
+
+| 参数名称 | 参数说明 | 请求类型 | 必须数据 | 类型   |
+| :------- | -------- | -------- | -------- | ------ |
+| id       | ID       |          | true     | string |
+
+响应参数
+
+| 参数名称    | 参数说               | 类型   |
+| :---------- | -------------------- | ------ |
+| code        | 状态码，200 正确     | string |
+| msg         | 返回消息内容         | string |
+| data        | 列表数据（数组类型） |        |
+|             |                      |        |
+| id          | ID                   | string |
+| ctime       | 时间                 | string |
+| title       | 新闻标题             | string |
+| description | 新闻内容             | string |
+| source      | 新闻来源             | string |
+| picUrl      | 图片链接             | string |
+| url         | 新闻链接             | string |
+
+响应示例
+
+```js
+{
+    "code": 200,
+    "msg": "查询成功",
+    "data": {
+        "id": "1",
+        "ctime": "2024-05-1413:07",
+        "title": "比亚迪：初步排除车辆漏电导致车主脑溢血",
+        "description": "5月14日消息，针对车主疑遭漏电而脑溢血事件，比亚迪今日向网易科技表示，从视频看，可以初步排除车辆漏电导致车主病发的情况。比亚迪表示，关于“触电”传言，从行车记录仪视频可以看到，副驾驶乘客未出现异常情况，车主也可以解开安全带移动，加上车辆有...[阅读更多]",
+        "source": "网易IT",
+        "picUrl": "https://nimg.ws.126.net/?url=http%3A%2F%2Fcms-bucket.ws.126.net%2F2024%2F0514%2Fb1f9fd56p00sdgm8f0018c0009c0070c.png&thumbnail=200y140&quality=100&type=jpg",
+        "url": "https://www.163.com/tech/article/J25CBQ2L00097U7T.html"
+    }
 }
 ```
 
